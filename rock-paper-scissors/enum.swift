@@ -9,9 +9,20 @@ import Foundation
 import UIKit
 
 enum Sign:String , CaseIterable {
-    case paper =  "✌️"
-    case rock = "✊"
-    case scissors = "🖐"
+    case paper
+    case rock
+    case scissors
+    
+    var emoji: String {
+        switch self {
+            case .scissors:
+                return "✌️"
+            case .rock:
+                return "✊"
+            case .paper:
+                return "🖐"
+        }
+    }
     
     func gameResult(againstSign: Sign) -> GameState {
         if self == againstSign {

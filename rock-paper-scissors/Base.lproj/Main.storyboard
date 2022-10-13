@@ -22,6 +22,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="✌🏻"/>
+                                <connections>
+                                    <action selector="scissorSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbm-mK-aPq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npu-Ba-JrO">
                                 <rect key="frame" x="169" y="504" width="58" height="50"/>
@@ -29,6 +32,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="🖐🏻"/>
+                                <connections>
+                                    <action selector="paperSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRg-0K-fKk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4l-GN-1KO">
                                 <rect key="frame" x="272" y="474" width="58" height="50"/>
@@ -36,16 +42,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="✊🏻"/>
+                                <connections>
+                                    <action selector="stoneSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iI-ua-87i"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bId-Xw-A06">
-                                <rect key="frame" x="138" y="383" width="115" height="21"/>
+                                <rect key="frame" x="75" y="384" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="👾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ow-bp-G7t">
-                                <rect key="frame" x="163" y="173" width="65" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-aW-lAM">
+                                <rect key="frame" x="145" y="635" width="103" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.15294116739999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSR-nB-jq6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ow-bp-G7t">
+                                <rect key="frame" x="16" y="157" width="358" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
@@ -58,6 +79,7 @@
                     <connections>
                         <outlet property="computerLabel" destination="5Ow-bp-G7t" id="xlX-v1-llB"/>
                         <outlet property="paperBtn" destination="npu-Ba-JrO" id="34l-Qf-5ZQ"/>
+                        <outlet property="playAgainBtn" destination="iA2-aW-lAM" id="Swm-ii-BM8"/>
                         <outlet property="rockBtn" destination="W4l-GN-1KO" id="78m-zT-iUJ"/>
                         <outlet property="scissorsBtn" destination="0wz-2Y-T0s" id="uZ2-cN-3Zn"/>
                         <outlet property="wordingLabel" destination="bId-Xw-A06" id="Urw-o8-Z7B"/>
