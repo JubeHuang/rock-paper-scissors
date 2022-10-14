@@ -14,6 +14,7 @@
 		BBF0B63A28F80D3700093920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF0B63928F80D3700093920 /* Assets.xcassets */; };
 		BBF0B63D28F80D3700093920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF0B63B28F80D3700093920 /* LaunchScreen.storyboard */; };
 		BBF0B64528F80D8000093920 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0B64428F80D8000093920 /* enum.swift */; };
+		BBF0B64728F9064F00093920 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF0B64628F9064F00093920 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BBF0B63C28F80D3700093920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBF0B63E28F80D3700093920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF0B64428F80D8000093920 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
+		BBF0B64628F9064F00093920 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				BBF0B63028F80D3700093920 /* AppDelegate.swift */,
 				BBF0B63228F80D3700093920 /* SceneDelegate.swift */,
 				BBF0B63428F80D3700093920 /* ViewController.swift */,
+				BBF0B64628F9064F00093920 /* Score.swift */,
 				BBF0B64428F80D8000093920 /* enum.swift */,
 				BBF0B63628F80D3700093920 /* Main.storyboard */,
 				BBF0B63928F80D3700093920 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				BBF0B63128F80D3700093920 /* AppDelegate.swift in Sources */,
 				BBF0B64528F80D8000093920 /* enum.swift in Sources */,
 				BBF0B63328F80D3700093920 /* SceneDelegate.swift in Sources */,
+				BBF0B64728F9064F00093920 /* Score.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

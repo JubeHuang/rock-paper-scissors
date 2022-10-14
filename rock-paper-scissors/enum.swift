@@ -51,6 +51,7 @@ enum GameState {
     case lose
     case draw
     case start
+    case first
     
     var wording:String {
         switch self {
@@ -62,6 +63,8 @@ enum GameState {
                 return "It's a Draw!"
             case .start:
                 return "Rock, Paper, Scissors?"
+            case .first:
+                return "Let's Play Rock, Paper, Scissors?"
         }
     }
     var color:UIColor {
@@ -73,6 +76,8 @@ enum GameState {
             case .draw:
                 return UIColor(red: 121/255, green: 185/255, blue: 166/255, alpha: 1)
             case .start:
+                return UIColor(red: 56/255, green: 86/255, blue: 122/255, alpha: 1)
+            case .first:
                 return UIColor(red: 56/255, green: 86/255, blue: 122/255, alpha: 1)
         }
     }
